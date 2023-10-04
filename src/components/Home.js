@@ -15,12 +15,18 @@ import SearchInput from "./SearchInput";
 
 const Home = () => {
   return (
+    // main div
     <StyledHeaderContainer>
+      {/* Header starts */}
       <StyledHeaderWrapper>
+        {/* Left div starts */}
         <StyledHeaderLeft>
           <Link to="/about">About</Link>
           <Link to="/store">Store</Link>
         </StyledHeaderLeft>
+        {/* left div ends */}
+
+        {/* Right div starts */}
         <StyledHeaderRight>
           <Link to="/gmail">Gamil</Link>
           <Link to="/images">Images</Link>
@@ -31,6 +37,8 @@ const Home = () => {
               />
             </IconButton>
           </Tooltip>
+
+          {/* Avatar */}
           <Tooltip title="Google Account">
             <Avatar
               sx={{
@@ -46,17 +54,24 @@ const Home = () => {
             </Avatar>
           </Tooltip>
         </StyledHeaderRight>
+        {/* right div ends */}
       </StyledHeaderWrapper>
+      {/* header ends */}
+
+      {/* Google Logo */}
       <StyledLogoContainer>
         <img
           src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_light_color_272x92dp.png"
           alt="googlelogo"
         />
+
+        {/* Search Area */}
         <div>
           <SearchInput showButtons={true} />
         </div>
       </StyledLogoContainer>
     </StyledHeaderContainer>
+    // main div ends
   );
 };
 
