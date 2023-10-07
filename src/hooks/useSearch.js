@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 
 const BASE_URL = "https://customsearch.googleapis.com/customsearch/v1";
-const API_KEY = process.env.REACT_APP_SEARCH_KEY;
+const API_KEY = process.env.REACT_APP_SEACRH_KEY;
 const SEACRH_ENGINE_KEY = process.env.REACT_APP_SEACRH_ENGINE_KEY;
 
 const useSearch = (searchTerm) => {
@@ -18,6 +18,8 @@ const useSearch = (searchTerm) => {
 
     fetchData();
   }, [searchTerm]);
+  // console.log(API_KEY);
+  // console.log(SEACRH_ENGINE_KEY);
   return {
     data,
   };

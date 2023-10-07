@@ -23,7 +23,7 @@ import { Tooltip, IconButton } from "@mui/material";
 import SearchInput from "./SearchInput";
 import SearchResults from "./SearchResults";
 import useSearch from "../hooks/useSearch";
-// import mocks from "../mocks";
+// import mocks from "../mocks"; 
 
 const SearchPage = () => {
   const { search } = useLocation();

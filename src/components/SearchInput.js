@@ -12,6 +12,7 @@ import { useNavigate } from "react-router-dom";
 const SearchInput = ({showButtons = false }) => {
   const [searchTerm, setSearchTerm] = useState("");
   const navigate = useNavigate();
+  // console.log(searchTerm);
 
   const handleSearch = (e) => {
     e.preventDefault();
